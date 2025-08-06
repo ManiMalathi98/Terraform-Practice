@@ -8,6 +8,6 @@ resource "aws_instance" "dev" {
     tags = {
       Name = "devtest"
     }
+}
 
   
-}
