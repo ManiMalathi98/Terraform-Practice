@@ -51,7 +51,7 @@ resource "aws_route_table_association" "dev_rt_assoc1" {
 # Creation of Nat Gateway
 resource "aws_nat_gateway" "dev_ngw" {
     allocation_id = aws_eip.nat_eip.id
-    subnet_id = aws_subnet.dev_subnet2.id
+    subnet_id = aws_subnet.dev_subnet1.id
     tags = {
       Name = var.nat_gateway_name
     }
